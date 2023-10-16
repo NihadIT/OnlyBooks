@@ -1,0 +1,230 @@
+﻿/* Общие стили */
+.product-info {
+    margin-top: 30px;
+
+}
+
+.left {
+    float: left;
+}
+
+.product-details {
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+.product-details-cover {
+    width: 20%;
+}
+
+    .product-details-cover img {
+        max-width: 100%;
+        object-fit: fill;
+    }
+
+.product-details-left {
+    flex: 1;
+    font-size: 16px;
+    background-color: #171717;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+    .product-details-left p {
+        margin:0px;
+    }
+
+.product-details-right {
+    flex: 2;
+    margin: 0 30px;
+}
+
+/* Стили для цен */
+.buying {
+    border: 1px solid dimgray;
+    border-right: none;
+    border-left: none;
+    margin: 10px 0;
+}
+
+.buying-price span,
+.buying-discount {
+    display: inline-block;
+}
+
+
+.buying-discount .origin-price {
+    text-decoration: line-through;
+    margin: 0 15px;
+    font-size: 22px;
+    color: dimgray;
+}
+
+.origin-price {
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.discount-price {
+    font: 22px "PTSans", "Tahoma", sans-serif;
+}
+
+    .origin-price::after,
+    .discount-price::after {
+        content: " \20BD";
+    }
+
+/* Стили для скидки */
+.percent-price {
+  
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.product-button {
+    display: grid;
+    place-items: self-start;
+    margin-top: 10px;
+}
+
+    .product-button button {
+        padding: 5px 20px;
+        background: linear-gradient(357deg, rgba(255,162,0,1) 0%, rgba(255,16,0,1) 100%);
+        color: white;
+        border-radius: 5px;
+    }
+
+.product-icons{
+    margin-top: 10px;
+}
+
+.product-icons .fave,
+.product-icons .compare {
+    display: block;
+}
+
+
+.product-icons a::before {
+    content: "";
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 7px; 
+    vertical-align: middle;
+}
+
+.fave .postpone-button {
+    background: none;
+    border: none;
+    margin-bottom: 5px;
+}
+
+
+.fave .postpone-button img {
+    width: 40px;
+}
+
+/* Стили для иконок */
+.icon {
+    padding-left: 25px; /* Отступ слева для текста после иконки */
+}
+
+.product-rating-body {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+}
+
+/* Рейтинг продукта */
+.product-rating-body .rate {
+    background: rgb(255,42,0);
+    background: linear-gradient(357deg, rgba(255,42,0,1) 0%, rgba(255,166,0,1) 100%);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: -1px -1px 1px black, 1px -1px 1px black, -1px 1px 1px black, 1px 1px 1px black;
+}
+
+/* Звездочки для выбора оценки */
+
+.rating-area {
+    position: absolute;
+    overflow: hidden;
+    width: 365px;
+    top: 50%;
+}
+
+    .rating-area:not(:checked) > input {
+        display: none;
+    }
+
+    .rating-area:not(:checked) > label {
+        float: right;
+        width: 30px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 32px;
+        color: lightgrey;
+        text-shadow: 1px 1px #bbb;
+    }
+
+        .rating-area:not(:checked) > label:before {
+            content: '★';
+        }
+
+    .rating-area > input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px #c60;
+    }
+
+    .rating-area:not(:checked) > label:hover,
+    .rating-area:not(:checked) > label:hover ~ label {
+        color: gold;
+    }
+
+    .rating-area > input:checked + label:hover,
+    .rating-area > input:checked + label:hover ~ label,
+    .rating-area > input:checked ~ label:hover,
+    .rating-area > input:checked ~ label:hover ~ label,
+    .rating-area > label:hover ~ input:checked ~ label {
+        color: gold;
+        text-shadow: 1px 1px goldenrod;
+    }
+
+.rate-area > label:active {
+    position: relative;
+}
+
+
+.product-description {
+    margin: 50px 0;
+}
+
+.product-description-title {
+    font-size: 20px;
+    text-shadow: -1px -1px 1px black, 1px -1px 1px black, -1px 1px 1px black, 1px 1px 1px black;
+}
+
+/* Похожие товары */
+.products {
+    margin: 100px 0;
+}
+
+.products-similar {
+    background: linear-gradient(183deg, rgba(41,41,41,0.2) 76%, rgba(9,9,9,1) 100%);
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+.products-similar h3 {
+    margin-left: 30px;
+}
+ 

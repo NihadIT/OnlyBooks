@@ -1,0 +1,45 @@
+﻿/* Pagination.css */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+    .pagination li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagination button {
+        background-color: #f23b26;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .pagination li.active button {
+            background-color: #fff; /* Цвет фона для активной кнопки */
+            color: #f23b26; /* Цвет текста для активной кнопки */
+            font-weight: bold;
+        }
+
+        .pagination button:hover {
+            background-color: #fff;
+            color: #f23b26;
+        }

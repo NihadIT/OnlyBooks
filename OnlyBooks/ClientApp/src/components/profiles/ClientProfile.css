@@ -1,0 +1,267 @@
+﻿.client-profile {
+    display: flex;
+}
+
+
+.profile-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 400px;
+    border: 1px solid #eaeaea0d;
+    border-radius: 10px;
+    margin: 20px 10px 20px 0;
+}
+
+/* Стили для заголовка */
+.profile-container h2 {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    background-color: blue;
+    text-shadow: 0px 0px 6px rgba(111, 0, 12, 0.75);
+}
+
+    .profile-container span {
+        display: inline-block;
+        color: white;
+        text-align: left;
+        background-color: green;
+        margin-left: 10px;
+        padding: 1px 5px;;
+    }
+
+/* Стили для блока информации о пользователе */
+.profile-info {
+}
+
+/* Стили для имени пользователя */
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Стили для остальных данных пользователя */
+.profile-details {
+    font-size: 16px;
+}
+
+/* Стили для кнопки "Выйти" */
+.logout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .logout-button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .logout-button:hover {
+        background-color: #0056b3;
+    }
+
+/* Стили для кнопки "Редактировать" */
+.edit-button {
+    background-color: #eaeaea0d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+    .edit-button:hover {
+        background-color: #218838;
+    }
+
+/* Стили для формы редактирования */
+.edit-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .edit-form input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .edit-form button.save-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+        .edit-form button.save-button:hover {
+            background-color: #0056b3;
+        }
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #ffc5c5;
+    border-radius: 50%; 
+    border: 1px solid #aaa;
+    box-shadow: 0px 2px 5px 1px rgba(111, 0, 12, 0.75);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(111, 0, 12, 0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(111, 0, 12, 0.75);
+}
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%; 
+    }
+
+
+.profile-orders-container {
+    text-align: left;
+    border: 1px solid #ccc;
+    width: 40%;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+/* Стиль таблицы */
+.profile-orders-container table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .profile-orders-container .totalAmount::after {
+        content: " \20BD";
+    }
+
+    .profile-orders-container th, .profile-orders-container td {
+        padding: 8px;
+    }
+
+    .profile-orders-container th {
+        background-color: #0889ff;
+        border-right: 1px solid;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .profile-orders-container td {
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-size: 16px;
+        font: 1.2rem "Fira Sans", sans-serif;
+    }
+
+
+    .profile-orders-container h3 {
+        text-align: center;
+    }
+
+.client-level {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 150px;
+    margin: 20px 20px;
+    padding: 10px;
+    text-align: center;
+}
+.client-level p {
+    text-align: center;
+    font-size: 22px;
+    -webkit-text-stroke-color: #B80000;
+    -webkit-text-fill-color: #8ADAFF;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+    .client-level span {
+        color: yellow;
+        font-size: 15px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+
+.progress-bar {
+    width: 90%;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.progress-fill {
+    height: 20px;
+    background-color: #00f;
+    position: relative;
+}
+
+/* Статистика трат */
+.expenses-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 20px;
+    padding: 20px;
+    background-color: #eaeaea0d;
+}
+
+    .expenses-container h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .expenses-container p {
+        font-size: 22px;
+        text-align: center;
+        color: #5cff00;
+    }
+
+.period-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+    .period-selection button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .period-selection button:hover {
+            background-color: #0056b3;
+        }

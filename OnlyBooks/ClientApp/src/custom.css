@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #181818;
+    color: white;
+}
+
+.wrapper {
+    margin: 0px 30px;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.page {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page.show {
+    opacity: 1;
+}
+

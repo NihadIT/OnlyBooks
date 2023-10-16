@@ -1,0 +1,122 @@
+﻿h2 {
+    text-align: center;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.cart-empty-title{
+    margin: 50px 0px;
+}
+
+.cart-container {
+}
+
+.cart-buttons {
+    display: inline;
+}
+
+.cart.books-list {
+    gap: 10px;
+}
+
+.cart.book {
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin: 50px 0;
+}
+
+.cart.book img {
+    width: 70%;
+}
+
+.total-price {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 2px #CE5937;
+    background-color: #44444426;
+}
+
+    .total-price::after {
+        margin-left: 10px;
+        content: "\20BD";
+    }
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: none;
+    margin: 15px 30px;
+    transition: all 0.3s;
+}
+
+    .btn button {
+        border: none;
+        font-family: 'Lato';
+        font-size: inherit;
+        color: white;
+        background: inherit;
+        cursor: pointer;
+        padding: 25px 80px;
+        display: inline-block;
+        margin: 15px 30px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+        .btn button:hover {
+            background: #2c3e50;
+        }
+
+    .btn-del {
+        border: none;
+        background: none;
+    }
+
+        .btn-del img {
+            transform: translate(0px,-190px)
+        }
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}

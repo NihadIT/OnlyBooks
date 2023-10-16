@@ -1,0 +1,260 @@
+﻿
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-
+    : 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .form-search input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personal-tools {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-search input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .personal-tools {
+        display: none;
+    }
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.tools-header {
+    height: 75%;
+    width: 85%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-search {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+    .form-search button {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        transform: translateY(-50%);
+        border: none;
+        background: transparent;
+        opacity: 0.5;
+    }
+
+    .form-search input {
+        position: relative;
+        padding-right: 100px;
+        padding-left: 20px;
+        width: 700px;
+        height: 50px;
+        font-size: 18px;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
+
+        .form-search input:hover {
+            background-color: white;
+        }
+
+    .form-search .icon-search {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+.logo {
+    width: 200px;
+}
+
+.personal-tools {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    right: 6%;
+    padding-right: 10px;
+    font: Roboto-Regular, Helvetica, Arial, sans-serif, 20px;
+}
+
+    .personal-tools button {
+        border: none;
+        background: transparent;
+        color: lightgray;
+        margin: 0px 20px;
+    }
+
+    .personal-tools button:hover {
+        color: white;
+    }
+
+    .personal-tools a:hover {
+        text-decoration: none;
+    }
+
+.btn-message,
+.btn-office,
+.btn-favorite,
+.btn-cart {
+    position: relative;
+    padding-top: 10px;
+}
+
+    .btn-message img,
+    .btn-office img,
+    .btn-favorite img,
+    .btn-cart img {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        width: 35px;
+        transform: translateX(-50%);
+    }
+
+    .btn-office a, .btn-cart a, .btn-favorite a {
+        color: white;
+    }
+
+    /* Счетчик корзины */
+    .cart-count {
+        position: absolute;
+        top: -5px; 
+        right: -0px; 
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 8px;
+        font-size: 11px;
+    }
+
+.menu-header {
+    position: absolute;
+}
+
+.menu-header-category nav {
+}
+    .menu-header-category nav ul {
+        padding: 0;
+        margin: -7px 0 0 0;
+        list-style: none;
+        position: relative;
+    }
+
+        .menu-header-category nav ul li {
+            display: inline-block;
+            background-color: none;
+        }
+
+    .menu-header-category nav a {
+        display: block;
+        padding: 0 10px;
+        color: lightgray;
+        font: Roboto-Regular, Helvetica, Arial, sans-serif, 16px;
+        line-height: 60px;
+        text-decoration: none;
+    }
+        .menu-header-category nav a:hover {
+            color: white;
+        }
+
+        .menu-header-category nav ul ul li a:hover {
+            background-color: rgb(128, 128, 128, 0.1);
+        }
+
+    .menu-header-category nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .menu-header-category nav ul li:hover > ul {
+        display: inherit;
+        background-color: rgb(25, 27, 28);
+    }
+
+    .menu-header-category nav ul ul li {
+        min-width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-header-category nav ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+
+    .menu-header-category nav ul ul ul li > a {
+        line-height: 2.2; /* Устанавливаем высоту строки текста для подсписка */
+        padding: 10px;   
+    }
+
+
+/* Результат поиска */
+
+.search-results {
+    position: absolute;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    z-index: 999;
+}
+
+    .search-results ul {
+        margin-left: -20px;
+    }
+
+        .search-results ul li {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px;
+            word-wrap: break-word;
+        }
+
+            .search-results ul li img {
+                width: 35px;
+                margin: 10px 5px;
+            }
+
+        .search-results ul li a {
+            color: #1b1b1b;
+        }
+
+    .result-price {
+        color: #ff5722;
+        font-size: 18px;
+    }
+
+        .result-price::after {
+            content: " \20BD";
+        }

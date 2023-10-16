@@ -1,0 +1,65 @@
+﻿
+.main-banners-wrapper {
+    margin: 20px 0px;
+    background-color: #1d1d1d;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    height: 450px;
+}
+
+.discount-books {
+    margin-right: 50px;
+    float: left;
+}
+
+.right-banner {
+    padding: 0 20px;
+    float: left;
+}
+
+.best-books {
+    padding: 0 15px;
+    background: linear-gradient(183deg, rgba(41,41,41,0.2) 76%, rgba(9,9,9,1) 100%);
+}
+
+    .best-books h4 {
+        margin: 20px 0 30px 0;
+    }
+
+.more_books {
+    float: left;
+    height: 70px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #292929;
+    margin-top: 30px;
+}
+
+    .more_books:hover {
+        background-color: #1c1c1c;
+    }
+
+    .more_books a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #a5a5a5;
+        padding: 4.5% 35%;
+    }
+
+        .more_books a:hover {
+            color: white;
+        }
+
+.main-content {
+    margin: 50px 0;
+}
+
+    .main-content .hits h2 {
+        margin-bottom: 30px;
+    }
+
+
+.hits > div {
+    margin-top: 50px;
+}

@@ -1,0 +1,23 @@
+﻿
+.phone-app {
+    position: relative;
+    width: 100%;
+}
+
+.phone {
+    margin-top: 50px;
+    text-align: center;
+}
+
+    .phone img  {
+       width: 25%;
+    }
+
+.markets {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.markets img {
+    width: 20%;
+}
